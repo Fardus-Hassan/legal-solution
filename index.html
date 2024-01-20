@@ -12,7 +12,9 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- customizations -->
     <script>
         tailwind.config = {
@@ -20,6 +22,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-color': '#B68C5A',
+                        'primary-text-color': '#414040',
+                        'secondary-text-color': '#707070',
                     }
                 }
             }
@@ -27,16 +32,107 @@
     </script>
     <!-- some css -->
     <style>
-        .manrope{
-            font-family: 'Manrope', sans-serif;
+        .garamond {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .menu :where(li > details > summary):after {
+            /* justify-self: end;
+            display: block; */
+            margin-top: -4.5px;
+            height: 10px;
+            width: 10px;
+            transform: rotate(-45deg);
+            /* transition-property: transform, margin-top;
+            transition-duration: .3s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            content: "";
+            transform-origin: 75% 75%;
+            box-shadow: 2px 2px;
+            pointer-events: none; */
+        }
+        .bg-img{
+            background-image: url();
         }
     </style>
 </head>
 
-<body class="manrope">
+<body class="poppins">
 
-    <header>
-
+    <header class="lg:mt-10 mt-5">
+        <div class="container mx-auto">
+            <nav>
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Item 1</a></li>
+                                <li>
+                                    <a>Parent</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Item 3</a></li>
+                            </ul>
+                        </div>
+                        <a href="index.html" class="min-w-[125px] md:w-full"><img src="images/logo2.png" alt=""></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 gap-8">
+                            <li><a>Home</a></li>
+                            <li>
+                                <details>
+                                    <summary>Services</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Cases</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Blog</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a
+                            class="p-4 text-xs bg-primary-color text-white md:px-8 md:py-5 rounded-lg font-semibold md:text-[18px] hover:scale-105 duration-300 cursor-pointer whitespace-nowrap">Free
+                            Consultation</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="w-36 h-44 bg-img"></div>
+        </div>
     </header>
     <main>
 
