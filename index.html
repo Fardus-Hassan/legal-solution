@@ -55,8 +55,13 @@
             box-shadow: 2px 2px;
             pointer-events: none; */
         }
-        .bg-img{
+
+        .bg-img {
             background-image: url('images/banner.png');
+        }
+
+        .legal-hover:hover {
+            background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0.00) 100%);
         }
     </style>
 </head>
@@ -78,21 +83,35 @@
                             </div>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Item 1</a></li>
+                                <li><a>Home</a></li>
                                 <li>
-                                    <a>Parent</a>
+                                    <a>Services</a>
                                     <ul class="p-2">
                                         <li><a>Submenu 1</a></li>
                                         <li><a>Submenu 2</a></li>
                                     </ul>
                                 </li>
-                                <li><a>Item 3</a></li>
+                                <li>
+                                    <a>Cases</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Blog</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Contact</a></li>
                             </ul>
                         </div>
                         <a href="index.html" class="min-w-[125px] md:w-full"><img src="images/logo2.png" alt=""></a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1 gap-8">
+                        <ul class="menu menu-horizontal px-1 gap-7">
                             <li><a>Home</a></li>
                             <li>
                                 <details>
@@ -133,11 +152,16 @@
             </nav>
             <div class="rounded-xl bg-img bg-no-repeat bg-center bg-cover mt-20 text-center md:mt-12">
                 <div class="space-y-7 bg-gradient-to-r from-[#111] to-[#11111100] p-24 rounded-xl px-4">
-                    <h1 class="text-5xl md:text-7xl text-white garamond font-extrabold leading-tight">We Provide Effective <br> Legal Solutions</h1>
-                    <p class="text-[#E7E7E7] leading-7 w-full md:w-[670px] m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <h1 class="text-5xl md:text-7xl text-white garamond font-extrabold leading-tight">We Provide
+                        Effective <br> Legal Solutions</h1>
+                    <p class="text-[#E7E7E7] leading-7 w-full md:w-[670px] m-auto">There are many variations of passages
+                        of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                        humour.</p>
                     <form>
-                        <input type="text" name="" id="" placeholder="Search your services" class="rounded-lg pl-5 py-5 placeholder:text-[#A0A0A0] placeholder:md:text-[16px] text-sm w-64 md:w-[500px] mb-5">
-                        <input type="submit" value="Search" class="bg-primary-color text-white font-semibold text-xl rounded-lg py-4 px-9 ml-6">
+                        <input type="text" name="" id="" placeholder="Search your services"
+                            class="rounded-lg pl-5 py-5 placeholder:text-[#A0A0A0] placeholder:md:text-[16px] text-sm w-64 md:w-[500px] mb-5">
+                        <input type="submit" value="Search"
+                            class="bg-primary-color text-white font-semibold text-xl rounded-lg py-4 px-9 ml-6">
                     </form>
                 </div>
             </div>
@@ -147,50 +171,64 @@
         <section class="my-16 md:my-28 max-w-[1170px] mx-auto">
             <div class="container mx-auto">
                 <div class="max-w-[715px] mx-auto text-center mb-16">
-                    <h1 class="text-primary-text-color text-[40px] garamond font-extrabold mb-3 md:mb-6">The Legal Practice Area</h1>
-                    <p class="text-secondary-text-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <h1 class="text-primary-text-color text-[40px] garamond font-extrabold mb-3 md:mb-6">The Legal
+                        Practice Area</h1>
+                    <p class="text-secondary-text-color">There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                     <!-- card-1 -->
-                    <div class="space-y-7 text-center px-16 pb-16 pt-8 md:border-r border-r-0 border-b border-solid border-[#E7E7E7]">
+                    <!-- card-1 -->
+                    <div
+                        class="space-y-7 text-center px-16 pb-16 pt-8 md:border-r border-r-0 border-b border-solid border-[#E7E7E7] hover:bg-[linear-gradient(180deg,rgba(243,243,243,1),rgba(243,243,243,0.00))] transition duration-300">
                         <img src="images/business.png" alt="" class="inline-block">
                         <h2 class="text-[32px] text-primary-text-color font-extrabold garamond">Business Law</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
                         <img src="images/Frame.png" alt="" class="inline-block">
                     </div>
-                     <!-- card-2 -->
-                    <div class="space-y-7 text-center px-16 pb-16 pt-8 border-r-0 lg:border-r border-b border-solid border-[#E7E7E7]">
+                    <!-- card-2 -->
+                    <div
+                        class="space-y-7 text-center px-16 pb-16 pt-8 border-r-0 lg:border-r border-b border-solid border-[#E7E7E7]  hover:bg-[linear-gradient(180deg,rgba(243,243,243,1),rgba(243,243,243,0.00))] transition duration-300">
                         <img src="images/criminal.png" alt="" class="inline-block">
                         <h2 class="text-[32px] text-primary-text-color font-extrabold garamond">Criminal Law</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
                         <img src="images/Frame.png" alt="" class="inline-block">
                     </div>
-                     <!-- card-3 -->
-                    <div class="space-y-7 text-center px-16 pb-16 pt-8 border-r-0 border-b md:border-b lg:border-r-0 md:border-r border-solid border-[#E7E7E7]">
+                    <!-- card-3 -->
+                    <div
+                        class="space-y-7 text-center px-16 pb-16 pt-8 border-r-0 border-b md:border-b lg:border-r-0 md:border-r border-solid border-[#E7E7E7]  hover:bg-[linear-gradient(180deg,rgba(243,243,243,1),rgba(243,243,243,0.00))] transition duration-300">
                         <img src="images/child.png" alt="" class="inline-block">
                         <h2 class="text-[32px] text-primary-text-color font-extrabold garamond">Child Support</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
                         <img src="images/Frame.png" alt="" class="inline-block">
                     </div>
-                     <!-- card-4 -->
-                    <div class="space-y-7 text-center px-16 pb-16 pt-8 border-r-0 lg:border-r lg:border-b-0 border-b border-solid border-[#E7E7E7]">
+                    <!-- card-4 -->
+                    <div
+                        class="space-y-7 text-center px-16 pb-16 pt-8 border-r-0 lg:border-r lg:border-b-0 border-b border-solid border-[#E7E7E7]  hover:bg-[linear-gradient(180deg,rgba(243,243,243,1),rgba(243,243,243,0.00))] transition duration-300">
                         <img src="images/education.png" alt="" class="inline-block">
                         <h2 class="text-[32px] text-primary-text-color font-extrabold garamond">Education Law</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
                         <img src="images/Frame.png" alt="" class="inline-block">
                     </div>
-                     <!-- card-5 -->
-                    <div class="space-y-7 text-center px-16 pb-16 pt-8 md:border-r lg:border-r md:border-b-0 border-b border-solid border-[#E7E7E7]">
+                    <!-- card-5 -->
+                    <div
+                        class="space-y-7 text-center px-16 pb-16 pt-8 md:border-r lg:border-r md:border-b-0 border-b border-solid border-[#E7E7E7] transition duration-300 hover:bg-[linear-gradient(180deg,#F3F3F3,rgba(243,243,243,0.00))]">
                         <img src="images/divorce.png" alt="" class="inline-block">
                         <h2 class="text-[32px] text-primary-text-color font-extrabold garamond">Divorce Law</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
                         <img src="images/Frame.png" alt="" class="inline-block">
                     </div>
-                     <!-- card-6 -->
-                    <div class="space-y-7 text-center px-16 pb-16 pt-8 md:border-l-0 lg:border-0 border-solid border-[#E7E7E7]">
+                    <!-- card-6 -->
+                    <div
+                        class="space-y-7 text-center px-16 pb-16 pt-8 md:border-l-0 lg:border-0 border-solid border-[#E7E7E7] legal-hover transition duration-500">
                         <img src="images/tax.png" alt="" class="inline-block">
                         <h2 class="text-[32px] text-primary-text-color font-extrabold garamond">Tax Law</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
                         <img src="images/Frame.png" alt="" class="inline-block">
                     </div>
                 </div>
@@ -200,6 +238,8 @@
     <footer>
 
     </footer>
+
+    <!-- bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] bg-center bg-cover -->
 
 </body>
 
